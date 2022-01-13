@@ -1,0 +1,50 @@
+@import '../../../assets/styles/vars';
+@import '../../../assets/styles/extends';
+
+.modal {
+  @extend %colored-line;
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 640px;
+  background: $mid-grey;
+  border-radius: 6px;
+  border: 1px solid $dark-main;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  color: $white;
+
+  span {
+    + span {
+      margin-left: 20px;
+    }
+  }
+}
+
+.name,
+.date,
+.status {
+  text-transform: capitalize;
+  font-size: 16px;
+  color: $white;
+  margin-top: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: $white;
+  cursor: pointer;
+  padding: 5px;
+}

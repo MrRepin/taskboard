@@ -1,0 +1,40 @@
+@import '../../assets/styles/vars';
+
+.board {
+  padding: 40px;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border: $default-border;
+  border-collapse: collapse;
+  table-layout: fixed;
+
+  th,
+  td {
+    width: 25%;
+    padding: 10px;
+  }
+
+  th {
+    border-left: $default-border;
+    color: $white;
+  }
+}
+
+.user {
+  border-top: $default-border;
+  color: $white;
+}
+
+.tasks {
+  min-height: 100px;
+  height: 100%;
+
+  td {
+    + td {
+      border-left: $default-border;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import '../../../assets/styles/vars';
+
+.column {
+  padding-bottom: 40px;
+
+  &.overed {
+    background: $dark-blue;
+  }
+}
